@@ -1,0 +1,33 @@
+WORKFLOW
+1. Remove A1 cell
+2. source("C:/THE/DIRECTORY/YOU/PUT/Data_cleaning_GUI.r")
+3. Open output file and 'tab' once to create an empty A1 cell
+4. source("C:/THE/DIRECTORY/YOU/PUT/Plotting_GUI.r")
+
+INSTALLATION
+1. Download & install 
+	http://cran.us.r-project.org/
+2. Run R console and install packages:
+	install.packages("gWidgetstcltk");
+	install.packages("pheatmap");
+	install.packages("RColorBrewer");
+	install.packages("vioplot");
+
+DATA CLEANING
+1. Type in:
+	source("C:/THE/DIRECTORY/YOU/PUT/Data_cleaning_GUI.r")
+2. Gene tables must have the A1 cell empty
+3. Alias file must have 2 columns, column headers being "From" & "To"
+4. Specified gene list must have a second column. It can be garbage
+5. "Remove duplicates" must selected if there are duplicate gene ID. The tool cannot handle multiple gene IDs
+6. Change the output file name in the output field. Existing files with the same name will be overwritten
+
+PLOTTING
+1. Type in:
+	source("C:/THE/DIRECTORY/YOU/PUT/Plotting_GUI.r")
+2. Gene tables/Bulk must have the A1 cell empty
+3. Log2(n) returns 0 for Log2(0)
+4. Violin plot, correlation plot outputs multiple files
+5. Existing files with the same name will be overwritten. You cannot change the file name directly using the tool
+6. Residuals is calculated on y=x, output in the same directory as the plots
+7. Maximum of 5 peaks, values returned are the x-coordinates. Peaks must be >25% global max to be outputted

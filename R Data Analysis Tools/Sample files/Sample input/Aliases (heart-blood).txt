@@ -1,0 +1,14 @@
+From	To
+1500010J02Rik	Ctc1
+Epb4.9	Dmtn
+Lrrc50	Dnaaf1
+Myst3	Kat6a
+Myst1	Kat8
+Mll1	Kmt2a
+Mll5	Kmt2e
+Rod1	Ptbp3
+Spna1	Spta1
+Spnb1	Sptb
+Odz4	Tenm4
+Hlb545	Xlch
+Hobit	Zfp683
